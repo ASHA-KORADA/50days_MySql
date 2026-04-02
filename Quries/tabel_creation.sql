@@ -37,3 +37,24 @@ salary_date varchar(40)
 );
 
 
+use 50days_mysql
+
+CREATE table cleaned_departments
+as SELECT * from departments
+
+CREATE table cleaned_employees
+as SELECT * from employees
+
+CREATE table cleaned_attedance
+as SELECT * from attedance
+
+create table cleaned_performance
+SELECT *from performance
+
+create table cleaned_salaries
+SELECT *
+from salaries
+
+
+
+
