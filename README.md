@@ -1,11 +1,17 @@
-## Day 2: Data Audit (Messiness Detection)
+## Day 3: Data Cleaning (Handling Missing Values)
 
 ### Objective
-Identify data issues across all tables and columns.
+Clean the dataset by handling missing values across multiple tables.
 
 ### Tasks Completed
-Created cleaned tables
-Identified NULL and empty values
+- Created cleaned versions of tables (employees_clean, departments_clean, performance_clean)
+- Converted empty values into NULL for consistency
+- Replaced NULL and empty values with appropriate defaults
+
+### Key Learning
+- NULL and empty values are different but both need to be handled
+- Data should not be cleaned directly in raw tables
+- Business rules are important while filling missing values
 
 ### Outcome
-Understood that data cleaning is required across the entire system before analysis.
+Dataset is now more structured and ready for further cleaning and analysis.
