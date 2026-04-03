@@ -58,8 +58,12 @@ having count(*) > 1
 use 50days_mysql
 
 --salaries table
+
+
 select *
 from cleaned_salaries
+
+
 select salary_id,
     emp_id,
     salary_date,
@@ -72,8 +76,11 @@ having count(*) > 1
 
 
 --departments table
+
 select *
 from cleaned_departments
+
+
 select dept_id,
     dept_name
 from cleaned_departments
@@ -87,6 +94,8 @@ having count(*) > 1
 
 select *
 from cleaned_attedance
+
+
 select attendance_id,
     emp_id,
     status,
