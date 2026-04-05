@@ -35,3 +35,13 @@ where salary > 0
  when 262 then 97000
  END
  where is_outlier=1
+
+
+select salary_id,emp_id,salary,count(*)
+ from cleaned_salaries
+ GROUP BY salary,salary_id,emp_id
+ having Count(*)>1
+
+
+
+ 
