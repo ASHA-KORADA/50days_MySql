@@ -1,43 +1,30 @@
-# 📊 SQL Practice – Day 4: Data Cleaning (Handling Inconsistent Text)
+## 📅 Day 5: Data Cleaning (Handling Invalid Values)
 
-## 🎯 Objective
+### 🎯 Objective
 
-Clean the dataset by identifying and fixing inconsistent text values across columns to ensure accurate analysis.
+Identify and correct logically incorrect or invalid values in the dataset to ensure data reliability.
 
----
+### 🔧 Tasks Performed
 
-## ✅ Tasks Completed
+* Detected invalid values such as:
 
-* Identified inconsistent text formats (e.g., `HR`, `hr`, `Hr`)
-* Standardized text using SQL functions:
+  * Negative salaries
+  * Invalid age entries
+  * Incorrect ratings
+* Defined valid ranges using business rules
+* Replaced incorrect values using client-provided reference data
+* Applied corrections using:
 
-  * `UPPER()`
-  * `LOWER()`
-  * `INITCAP()`
-* Removed unwanted spaces using `TRIM()`
-* Corrected spelling variations and inconsistencies
-* Applied uniform naming conventions across tables
+  * `CASE WHEN`
+  * `JOIN-based UPDATE` statements
+* Ensured no assumption-based modifications were made
 
----
+### 🧠 Key Learnings
 
-## 🧠 Key Learnings
+* Invalid values are not always missing — they can be logically incorrect
+* Data corrections must rely on trusted sources (client/system data)
+* Avoid modifying data without understanding the business context
 
-* Text inconsistency directly impacts grouping and aggregation
-* Same values with different formats are treated as separate data
-* Data standardization is a critical preprocessing step before analysis
+### ✅ Outcome
 
----
-
-## 🚀 Outcome
-
-The dataset is now cleaned and standardized, enabling:
-
-* Accurate grouping
-* Reliable filtering
-* Consistent analytical results
-
----
-
-## 📂 Files Included
-
-* 'day4.sql' → Contains all data cleaning queries
+The dataset now contains only valid and reliable values, significantly improving overall data quality and accuracy.
