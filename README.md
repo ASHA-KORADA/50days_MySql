@@ -1,23 +1,27 @@
-Day 6: Data Cleaning — Outlier Detection & Handling
-🎯 Objective
+📅 Day 7: Data Cleaning – Date Standardization
 
-Identify, analyze, and handle extreme values (outliers) to improve data quality without losing meaningful insights.
+Objective: Ensure consistency and reliability of date-related data
 
-✅ Tasks Performed
-Detected outliers using domain-driven business thresholds (e.g., salary ranges)
-Created a derived column is_outlier to systematically flag anomalies
-Segregated valid vs invalid outliers using contextual understanding
-Corrected invalid outliers using trusted client-provided data sources
-Retained legitimate extreme values (e.g., executive/CEO compensation)
-🧠 Key Learnings
-Not all outliers indicate errors — some represent critical business signals
-Blind removal of outliers can lead to loss of valuable insights
-Effective data cleaning requires a balance of technical logic + domain knowledge
-📊 Outcome
+Key Activities:
 
-A refined dataset where:
+Identified inconsistencies across multiple date columns:
+salary_date
+attendance_date
+hire_date
+Detected and handled invalid date patterns, including:
+Incorrect month values (e.g., > 12)
+Incomplete or malformed date structures
+Mixed date formats across columns
+Applied data validation logic to:
+Replace invalid or non-standard entries with NULL
+Prevent inaccurate analysis due to corrupted date values
+Standardized all valid dates into a consistent format:
+YYYY-MM-DD (ISO standard)
+Ensured uniformity across all date columns to support:
+Accurate querying
+Reliable reporting
+Downstream analytics (e.g., dashboards in Power BI)
 
-Data integrity is maintained
-Erroneous values are corrected
-Meaningful extreme values are preserved
-Analytical reliability is significantly improved
+Outcome:
+
+A clean and standardized dataset with consistent date formats, enabling trustworthy analysis and eliminating data quality issues related to temporal fields.
