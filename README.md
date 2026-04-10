@@ -1,15 +1,15 @@
-# 📊 50 Days SQL Challenge – Day 10
+# 📊 50 Days SQL Challenge – Day 11
 
 ## 🧠 Overview
-This project focuses on analyzing employee data using SQL, with a strong emphasis on identifying missing data and understanding performance insights.
+This project focuses on analyzing employee data across multiple tables to build complete employee profiles and derive salary insights.
 
-In real-world datasets, missing or incomplete data is very common. This task highlights how SQL can be used not only to extract information but also to detect gaps in data.
+In real-world scenarios, data is often distributed across multiple tables. The key skill is combining them effectively to generate meaningful insights.
 
 ---
 
 ## 📌 Objectives
 
-- Retrieve performance ratings of each employee  
-- Identify employees who do not have salary records  
-- Detect employees without attendance records  
-- Combine employee name, department, and salary into a single view  
+- Retrieve employee name, department, and performance ratings  
+- Build complete employee profiles (department, salary, performance)  
+- Calculate number of salary records per employee  
+- Compute total salary paid to each employee  
