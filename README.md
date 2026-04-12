@@ -1,15 +1,15 @@
-# 📊 50 Days SQL Challenge – Day 11
+# 📊 50 Days SQL Challenge – Day 12
 
 ## 🧠 Overview
-This project focuses on analyzing employee data across multiple tables to build complete employee profiles and derive salary insights.
+In Day 12, the focus is on deeper employee data analysis using aggregation and grouping techniques.
 
-In real-world scenarios, data is often distributed across multiple tables. The key skill is combining them effectively to generate meaningful insights.
+This includes calculating averages, tracking attendance, identifying relationships within departments, and detecting multiple salary records.
 
 ---
 
 ## 📌 Objectives
 
-- Retrieve employee name, department, and performance ratings  
-- Build complete employee profiles (department, salary, performance)  
-- Calculate number of salary records per employee  
-- Compute total salary paid to each employee  
+- Calculate average salary in each department  
+- Count number of days each employee was present  
+- Identify employees belonging to the same department  
+- Find employees with more than one salary record  
