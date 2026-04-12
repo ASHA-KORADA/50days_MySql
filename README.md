@@ -1,15 +1,16 @@
-# 📊 50 Days SQL Challenge – Day 12
+# 📊 50 Days SQL Challenge – Day 13
 
 ## 🧠 Overview
-In Day 12, the focus is on deeper employee data analysis using aggregation and grouping techniques.
+In Day 13, the focus is on analyzing salary distribution using SQL by comparing individual salaries with overall trends such as average, maximum, and minimum values.
 
-This includes calculating averages, tracking attendance, identifying relationships within departments, and detecting multiple salary records.
+This helps in understanding how each employee stands within the organization.
 
 ---
 
 ## 📌 Objectives
 
-- Calculate average salary in each department  
-- Count number of days each employee was present  
-- Identify employees belonging to the same department  
-- Find employees with more than one salary record  
+- List employees earning more than average salary  
+- Identify employees with maximum salary  
+- List employees earning less than average salary  
+- Retrieve employees with minimum salary  
+
