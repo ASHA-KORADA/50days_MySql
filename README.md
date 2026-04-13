@@ -1,16 +1,14 @@
-# 📊 50 Days SQL Challenge – Day 13
+# 📊 50 Days SQL Challenge – Day 14
 
 ## 🧠 Overview
-In Day 13, the focus is on analyzing salary distribution using SQL by comparing individual salaries with overall trends such as average, maximum, and minimum values.
+In Day 14, the focus shifts from overall analysis to **department-level insights**.
 
-This helps in understanding how each employee stands within the organization.
+Instead of comparing employees globally, we analyze how each employee performs **within their own department**, which provides more meaningful and realistic insights.
 
 ---
 
 ## 📌 Objectives
 
-- List employees earning more than average salary  
-- Identify employees with maximum salary  
-- List employees earning less than average salary  
-- Retrieve employees with minimum salary  
-
+- List employees earning more than their department's average salary  
+- Identify employees earning the highest salary in their department  
+- List employees earning the lowest salary in their department  
