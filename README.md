@@ -1,14 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 14
+# 📊 50 Days SQL Challenge – Day 15
 
 ## 🧠 Overview
-In Day 14, the focus shifts from overall analysis to **department-level insights**.
+In Day 15, the focus is on solving real-world data problems using **EXISTS** and **NOT EXISTS**.
 
-Instead of comparing employees globally, we analyze how each employee performs **within their own department**, which provides more meaningful and realistic insights.
+These operators are powerful for checking whether related data exists or is missing, which is a common requirement in real-world datasets.
 
 ---
 
 ## 📌 Objectives
 
-- List employees earning more than their department's average salary  
-- Identify employees earning the highest salary in their department  
-- List employees earning the lowest salary in their department  
+- List employees with salary records (at least once)  
+- Identify employees without salary records  
+- Retrieve employees with attendance records  
+- Detect employees without attendance records
+
+- ---
