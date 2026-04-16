@@ -1,17 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 15
+# 📊 50 Days SQL Challenge – Day 16
 
 ## 🧠 Overview
-In Day 15, the focus is on solving real-world data problems using **EXISTS** and **NOT EXISTS**.
+In Day 16, the focus is on analyzing employee salary data using aggregation functions.
 
-These operators are powerful for checking whether related data exists or is missing, which is a common requirement in real-world datasets.
+Aggregation helps transform raw transactional data into meaningful insights by summarizing values.
 
 ---
 
 ## 📌 Objectives
 
-- List employees with salary records (at least once)  
-- Identify employees without salary records  
-- Retrieve employees with attendance records  
-- Detect employees without attendance records
+- Calculate total salary paid to each employee  
+- Calculate average salary of each employee  
+- Count number of salary records per employee  
+- Find maximum salary received by each employee  
 
-- ---
+---
