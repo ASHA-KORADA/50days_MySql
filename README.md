@@ -1,17 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 16
+# 📊 50 Days SQL Challenge – Day 17
 
 ## 🧠 Overview
-In Day 16, the focus is on analyzing employee salary data using aggregation functions.
+In Day 17, the focus is on analyzing grouped data using **GROUP BY** and filtering aggregated results using **HAVING**.
 
-Aggregation helps transform raw transactional data into meaningful insights by summarizing values.
+This is a key concept in SQL for solving real-world business problems where conditions are applied on summarized data.
 
 ---
 
 ## 📌 Objectives
 
-- Calculate total salary paid to each employee  
-- Calculate average salary of each employee  
-- Count number of salary records per employee  
-- Find maximum salary received by each employee  
+- List employees with more than 2 salary records  
+- Identify departments with more than 3 employees  
+- Find employees whose total salary is greater than 100000  
+- Retrieve departments with average salary greater than 50000  
 
 ---
