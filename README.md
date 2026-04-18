@@ -1,17 +1,18 @@
-# 📊 50 Days SQL Challenge – Day 17
+# 📊 50 Days SQL Challenge – Day 18
 
 ## 🧠 Overview
-In Day 17, the focus is on analyzing grouped data using **GROUP BY** and filtering aggregated results using **HAVING**.
+In Day 18, the focus is on solving advanced SQL problems by combining **aggregation, filtering, joins, and correlated subqueries**.
 
-This is a key concept in SQL for solving real-world business problems where conditions are applied on summarized data.
+These types of queries closely resemble real-world business scenarios where multiple conditions must be applied together.
 
 ---
 
 ## 📌 Objectives
 
-- List employees with more than 2 salary records  
-- Identify departments with more than 3 employees  
-- Find employees whose total salary is greater than 100000  
-- Retrieve departments with average salary greater than 50000  
+- List employees whose average performance rating is greater than 4  
+- Identify employees with more than 2 present days  
+- Find departments where total salary paid is greater than 200000  
+- List employees whose total salary is greater than their department average salary  
 
 ---
+
