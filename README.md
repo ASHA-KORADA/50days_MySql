@@ -1,18 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 18
+# 📊 50 Days SQL Challenge – Day 19
 
 ## 🧠 Overview
-In Day 18, the focus is on solving advanced SQL problems by combining **aggregation, filtering, joins, and correlated subqueries**.
+In Day 19, the focus is on transforming raw data into meaningful categories using the **CASE WHEN** statement.
 
-These types of queries closely resemble real-world business scenarios where multiple conditions must be applied together.
+Categorization helps convert numerical data into business-friendly insights that are easier to interpret and analyze.
 
 ---
 
 ## 📌 Objectives
 
-- List employees whose average performance rating is greater than 4  
-- Identify employees with more than 2 present days  
-- Find departments where total salary paid is greater than 200000  
-- List employees whose total salary is greater than their department average salary  
+- Categorize employees based on salary (Low / Medium / High)  
+- Categorize employees based on performance rating (Good / Average / Poor)  
+- Categorize employees based on attendance status (Active / Inactive)  
+- Categorize employees based on experience level (Fresher / Mid-Level / Experienced)  
 
 ---
-
