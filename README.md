@@ -1,17 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 19
+# 📊 50 Days SQL Challenge – Day 20
 
 ## 🧠 Overview
-In Day 19, the focus is on transforming raw data into meaningful categories using the **CASE WHEN** statement.
+In Day 20, the focus is on advanced SQL using **Window Functions**, specifically **ROW_NUMBER()** and ranking techniques.
 
-Categorization helps convert numerical data into business-friendly insights that are easier to interpret and analyze.
+Window functions allow us to analyze data within partitions without losing row-level details, making them extremely powerful for real-world scenarios.
 
 ---
 
 ## 📌 Objectives
 
-- Categorize employees based on salary (Low / Medium / High)  
-- Categorize employees based on performance rating (Good / Average / Poor)  
-- Categorize employees based on attendance status (Active / Inactive)  
-- Categorize employees based on experience level (Fresher / Mid-Level / Experienced)  
+- Retrieve latest salary record for each employee  
+- Retrieve first (oldest) salary record for each employee  
+- Rank salary records for each employee  
+- Extract top 2 salary records per employee  
 
 ---
