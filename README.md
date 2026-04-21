@@ -1,17 +1,17 @@
-# 📊 50 Days SQL Challenge – Day 20
+# 📊 50 Days SQL Challenge – Day 21
 
 ## 🧠 Overview
-In Day 20, the focus is on advanced SQL using **Window Functions**, specifically **ROW_NUMBER()** and ranking techniques.
+In Day 21, the focus is on advanced window functions using **RANK()** and **DENSE_RANK()**.
 
-Window functions allow us to analyze data within partitions without losing row-level details, making them extremely powerful for real-world scenarios.
+These functions help in ranking data while handling ties differently, making them essential for comparative analysis and prioritization.
 
 ---
 
 ## 📌 Objectives
 
-- Retrieve latest salary record for each employee  
-- Retrieve first (oldest) salary record for each employee  
-- Rank salary records for each employee  
-- Extract top 2 salary records per employee  
+- Rank employees based on salary  
+- Perform department-wise ranking of employees  
+- Identify top performers based on average performance rating  
+- Find top 3 employees based on salary ranking  
 
 ---
