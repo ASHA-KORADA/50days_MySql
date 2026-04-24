@@ -1,95 +1,112 @@
 
-# 🚀 Day 23 – SQL Challenge
+# 🚀 50 Days of MySQL Challenge
 
-## 📊 LAG() Function – Trend Analysis
-
----
-
-## 📌 Project Overview
-
-This project focuses on analyzing **trends in data using SQL window functions**, specifically the `LAG()` function.
-
-The goal is to understand how values change over time by comparing current and previous records.
+Welcome to my **50 Days of MySQL Learning Journey**!
+This repository documents my consistent effort to master SQL concepts through **daily practice, real-world scenarios, and hands-on queries**.
 
 ---
 
-## 🧠 Key Concepts Covered
+## 📌 About This Project
 
-* SQL Window Functions
-* `LAG()` Function
-* Trend Analysis
-* Time-based Data Comparison
+This challenge is designed to:
 
----
+* Build strong SQL fundamentals
+* Practice real-world business scenarios
+* Improve problem-solving using data
+* Prepare for Data Analyst roles
 
-## 🛠️ Tasks Performed
-
-### 1️⃣ Salary Trend Analysis
-
-* Displayed **current salary along with previous salary** for each employee
-* Used `LAG()` to access previous row values
-
-### 2️⃣ Salary Difference Calculation
-
-* Calculated **difference between current and previous salary**
-* Helped identify salary growth patterns
-
-### 3️⃣ Attendance Trend Analysis
-
-* Compared **current attendance status with previous status**
-* Identified behavioral or pattern changes over time
+Each day focuses on a specific concept with **practical queries and use cases**.
 
 ---
 
-## 📈 Key Insights
+## 🧠 What I’m Learning
 
-* Data analysis is not just about static values
-* Understanding **change over time** is critical
-* `LAG()` helps:
+Throughout this journey, I’m covering:
 
-  * Track trends
-  * Identify growth 📈
-  * Detect declines 📉
-
----
-
-## 🎯 Key Takeaway
-
-> **Track the past → Understand the present → Predict the future**
+* ✅ Basic Queries (SELECT, WHERE, ORDER BY)
+* ✅ Joins (INNER, LEFT, RIGHT, FULL)
+* ✅ Aggregations & Grouping
+* ✅ Subqueries & CTEs
+* ✅ Window Functions (`LEAD`, `LAG`, `RANK`, etc.)
+* ✅ Real-world Business Analysis Scenarios
 
 ---
 
-## 📂 Use Cases
+## 📂 Repository Structure
 
-* Salary progression analysis
-* Sales trend tracking
-* Customer behavior analysis
-* Attendance monitoring
-* Financial reporting
-
----
-
-## 🚀 Why This Matters
-
-Trend analysis is widely used in:
-
-* Business Intelligence
-* Performance Tracking
-* Decision Making
-* Forecasting
+```
+50days_MySql/
+│
+├── Quries/
+│   ├── day-1.sql
+│   ├── day-2.sql
+│   ├── ...
+│   ├── day-24.sql
+│   └── ...
+│
+└── README.md
+```
 
 ---
 
-## 🔗 Connect & Follow
+## 📅 Progress Tracker
 
-If you're also learning SQL or Data Analytics, feel free to connect!
-More projects coming soon 🚀
+| Day    | Topic                          |
+| ------ | ------------------------------ |
+| Day 1  | Basics – SELECT, WHERE         |
+| Day 2  | Filtering & Sorting            |
+| ...    | ...                            |
+| Day 24 | LEAD() – Future Trend Analysis |
+| ...    | ...                            |
 
 ---
 
-## 🏷️ Tags
+## 🔍 Sample Insight (Day 24)
 
-`#SQL` `#DataAnalytics` `#WindowFunctions` `#LAG` `#SQLLearning` `#SQLChallenge`
+* Used `LEAD()` to fetch next salary
+* Compared current vs next salary for growth analysis
+* Predicted attendance trends using future records
+
+👉 Shows how SQL can move beyond reporting to **trend analysis and decision-making**
 
 ---
 
+## 💡 Key Takeaways
+
+* SQL is not just for querying data
+* It enables **pattern recognition and forecasting**
+* Window functions are powerful for **analytical insights**
+
+---
+
+## 📈 Why This Project Matters
+
+This project demonstrates:
+
+* Consistency & discipline
+* Real-world analytical thinking
+* Practical SQL skills for Data Analytics
+
+---
+
+## 🔗 Connect With Me
+
+* 💼 LinkedIn: https://www.linkedin.com/posts/asha-korada_github-asha-korada50daysmysql-activity-7452954210268254210-NaC1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGSiApIBRE5Br4jgXC7XChMeUJcxzeQr62E
+* 📊 Portfolio: *(Optional)*
+
+---
+
+## ⭐ Support
+
+If you find this helpful:
+
+* ⭐ Star this repository
+* 🔁 Share with others learning SQL
+
+---
+
+### 🔥 Final Note
+
+> *“Data is not just about understanding the past — it’s about predicting the future.”*
+
+---
