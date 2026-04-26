@@ -1,71 +1,79 @@
-# 📊 Day 26: SQL – Department Ranking & Salary Comparison
+# 📊 Day 27: SQL – Overall Salary Comparison
 
 ## 🔍 Objective
 
-This project focuses on analyzing employee salary distribution within departments using advanced SQL techniques such as window functions and conditional logic.
+This project focuses on analyzing employee and department salary contributions using SQL.
+The goal is to derive meaningful insights by comparing individual and departmental salaries against overall metrics.
 
 ---
 
 ## 🧠 Key Tasks Performed
 
-### 1. Department-wise Employee Ranking
+### 1. Employee Salary vs Overall Average
 
-* Ranked employees within each department based on salary
-* Used `RANK()` / `DENSE_RANK()` window functions
-
-### 2. Salary Comparison with Department Average
-
-* Calculated average salary per department
-* Compared each employee’s salary:
+* Calculated overall average salary of all employees
+* Compared each employee’s salary with average:
 
   * Above Average
   * Below Average
   * Equal to Average
 
-### 3. Top 3 Highest Paid Employees per Department
+---
 
-* Identified top performers using ranking logic
-* Filtered top 3 salaries within each department
+### 2. Employee Contribution to Total Salary
 
-### 4. Lowest Salary Employee per Department
+* Calculated total salary of all employees
+* Compared each employee’s salary:
 
-* Found minimum salary per department
-* Identified corresponding employee(s)
+  * Salary > 10% of total → **High Contributor**
+  * Else → **Low Contributor**
+
+---
+
+### 3. Department Contribution to Total Salary
+
+* Calculated total salary for each department
+* Compared department totals with overall salary:
+
+  * Dept total > 30% of overall → **High Dept**
+  * Else → **Low Dept**
 
 ---
 
 ## ⚙️ SQL Concepts Used
 
-* `WINDOW FUNCTIONS` → RANK(), DENSE_RANK(), AVG() OVER()
-* `PARTITION BY` for department-level analysis
-* `CASE WHEN` for salary comparison
-* `CTEs` for structured queries
+* **Window Functions** → `AVG() OVER()`, `SUM() OVER()`
+* **PARTITION BY** for department-level analysis
+* **CASE WHEN** for classification logic
+* **CTEs (WITH clause)** for structured queries
+* **JOINs** to combine employee, salary, and department data
 
 ---
 
-## 💡 Key Insight
+## 💡 Key Insights
 
-While overall company analysis gives a high-level view,
-department-level insights reveal true performance differences.
+* Individual salary comparison helps identify top and low performers
+* Contribution analysis highlights employees impacting business revenue
+* Department-level comparison reveals dominant business units
 
 ---
 
 ## 🚀 Outcome
 
-This project strengthens understanding of:
+This project enhances:
 
-* Analytical SQL
-* Real-world business scenarios
-* Data-driven decision making
+* Analytical SQL skills
+* Real-world business understanding
+* Ability to derive insights from raw data
 
 ---
 
 ## 🔗 Project Link
 
-👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-26.sql
+👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day%2027.sql
 
 ---
 
 ## 📌 Tags
 
-`SQL` `Data Analytics` `Window Functions` `Ranking` `Case Study`
+`SQL` `Data Analytics` `Window Functions` `Business Analysis` `Case Study`
