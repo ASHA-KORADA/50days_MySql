@@ -1,79 +1,81 @@
-# 📊 Day 27: SQL – Overall Salary Comparison
+# 📊 Day 28: SQL – Advanced Analysis & Ranking
 
 ## 🔍 Objective
 
-This project focuses on analyzing employee and department salary contributions using SQL.
-The goal is to derive meaningful insights by comparing individual and departmental salaries against overall metrics.
+This project focuses on advanced analytical SQL techniques, including ranking, trend analysis, and performance comparison.
+The goal is to derive deeper insights from employee salary and performance data.
 
 ---
 
 ## 🧠 Key Tasks Performed
 
-### 1. Employee Salary vs Overall Average
+### 1. Top 2 Highest Paid Employees in Each Department
 
-* Calculated overall average salary of all employees
-* Compared each employee’s salary with average:
-
-  * Above Average
-  * Below Average
-  * Equal to Average
+* Ranked employees within each department based on salary
+* Filtered top 2 highest-paid employees
+* Used `RANK()` / `DENSE_RANK()` with `PARTITION BY`
 
 ---
 
-### 2. Employee Contribution to Total Salary
+### 2. Salary Gap Analysis
 
-* Calculated total salary of all employees
-* Compared each employee’s salary:
-
-  * Salary > 10% of total → **High Contributor**
-  * Else → **Low Contributor**
+* Calculated the difference between current salary and previous salary
+* Used `LAG()` window function
+* Helps identify salary growth trends
 
 ---
 
-### 3. Department Contribution to Total Salary
+### 3. Performance Gap Analysis
 
-* Calculated total salary for each department
-* Compared department totals with overall salary:
+* Compared employee performance across years
+* Measured change in performance using previous records
+* Useful for tracking improvement or decline
 
-  * Dept total > 30% of overall → **High Dept**
-  * Else → **Low Dept**
+---
+
+### 4. Filter Top Performers
+
+* Ranked employees based on performance or salary
+* Selected only top-performing employees
+* Demonstrates advanced filtering using ranking logic
 
 ---
 
 ## ⚙️ SQL Concepts Used
 
-* **Window Functions** → `AVG() OVER()`, `SUM() OVER()`
-* **PARTITION BY** for department-level analysis
-* **CASE WHEN** for classification logic
+* **Window Functions** → `RANK()`, `DENSE_RANK()`, `LAG()`
+* **PARTITION BY** for department-wise and employee-wise analysis
+* **ORDER BY** within window functions
 * **CTEs (WITH clause)** for structured queries
-* **JOINs** to combine employee, salary, and department data
+* **Analytical Comparisons** for trend and gap analysis
 
 ---
 
 ## 💡 Key Insights
 
-* Individual salary comparison helps identify top and low performers
-* Contribution analysis highlights employees impacting business revenue
-* Department-level comparison reveals dominant business units
+* Ranking helps identify top talent within departments
+* Salary gap analysis reveals growth patterns
+* Performance comparison highlights improvement trends
+* Combining ranking + window functions enables advanced analytics
 
 ---
 
 ## 🚀 Outcome
 
-This project enhances:
+This project strengthens:
 
-* Analytical SQL skills
-* Real-world business understanding
-* Ability to derive insights from raw data
+* Advanced SQL analytical skills
+* Real-world data analysis thinking
+* Ability to work with time-based comparisons
 
 ---
 
 ## 🔗 Project Link
 
-👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day%2027.sql
+👉https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-28.sql
 
 ---
 
 ## 📌 Tags
 
-`SQL` `Data Analytics` `Window Functions` `Business Analysis` `Case Study`
+`SQL` `Advanced SQL` `Window Functions` `Ranking` `Data Analytics` `Case Study`
