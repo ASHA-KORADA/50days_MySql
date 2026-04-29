@@ -1,64 +1,61 @@
-# 📊 Day 29: SQL – Advanced Window Functions & Analysis
+# 📊 Day 30: SQL – CTE (Common Table Expressions)
 
 ## 🔍 Objective
 
-This project focuses on leveraging advanced window functions to analyze salary trends, ranking, and historical comparisons.
-The goal is to understand how employee salaries evolve over time and how they compare within departments.
+This project focuses on using **Common Table Expressions (CTEs)** to simplify complex queries, improve readability, and perform step-by-step data analysis.
 
 ---
 
 ## 🧠 Key Tasks Performed
 
-### 1. Latest Salary with Cumulative Total
+### 1. Create Temporary Result Set Using CTE
 
-* Retrieved the latest salary record for each employee
-* Calculated running total (cumulative salary) up to that point
-* Used `ROW_NUMBER()` / `MAX()` with window functions
-* Used `SUM() OVER()` for cumulative calculation
-
----
-
-### 2. Salary Ranking with Department Comparison
-
-* Ranked employees based on salary
-* Compared each employee’s salary with their department average
-* Classified employees as:
-
-  * Above Average
-  * Below Average
-  * Equal to Average
-* Used `RANK()` and `AVG() OVER(PARTITION BY dept_id)`
+* Built a temporary dataset using `WITH` clause
+* Filtered data from the CTE instead of writing nested queries
+* Improved query readability and structure
 
 ---
 
-### 3. Salary Trend Analysis (Increase / Decrease)
+### 2. Combine Employees and Salaries Using CTE
 
-* Compared current salary with previous salary record
-* Identified:
+* Joined employee and salary tables inside a CTE
+* Created a reusable dataset for further analysis
+* Avoided repeated joins in multiple queries
 
-  * Salary Increased
-  * Salary Decreased
-  * No Change
-* Used `LAG()` window function
+---
+
+### 3. Calculate Department Average Salary Using CTE
+
+* Computed average salary for each department
+* Used aggregation (`AVG`) inside CTE
+* Simplified department-level analysis
+
+---
+
+### 4. Find Employees Earning More Than Department Average
+
+* Compared each employee’s salary with department average
+* Filtered employees earning above average
+* Demonstrated real-world business use case
 
 ---
 
 ## ⚙️ SQL Concepts Used
 
-* **Window Functions** → `ROW_NUMBER()`, `RANK()`, `LAG()`, `SUM() OVER()`, `AVG() OVER()`
-* **PARTITION BY** for employee and department-level analysis
-* **ORDER BY** within window functions for time-based calculations
-* **CTEs (WITH clause)** for structured queries
-* **CASE WHEN** for classification logic
+* **CTE (WITH clause)** for modular query design
+* **JOINs** to combine multiple tables
+* **Aggregate Functions** → `AVG()`
+* **Filtering** using conditions on derived data
+* **Reusability** of intermediate result sets
 
 ---
 
 ## 💡 Key Insights
 
-* Running totals help track salary growth over time
-* Ranking highlights employee positioning within departments
-* Trend analysis reveals salary progression patterns
-* Window functions enable powerful time-based comparisons
+* CTEs make complex queries easier to read and maintain
+* Helps break down problems into logical steps
+* Reduces repetition and improves query clarity
+* Useful for layered analysis and reporting
 
 ---
 
@@ -66,18 +63,19 @@ The goal is to understand how employee salaries evolve over time and how they co
 
 This project strengthens:
 
-* Advanced SQL analytical thinking
-* Real-world data analysis skills
-* Ability to work with historical and time-series data
+* Structured SQL writing
+* Logical thinking in query design
+* Real-world data analysis approach
 
 ---
 
 ## 🔗 Project Link
 
-👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-29.sql
+👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-30.sql
 
 ---
 
 ## 📌 Tags
 
-`SQL` `Advanced SQL` `Window Functions` `Time Series Analysis` `Ranking` `Data Analytics`
+`SQL` `CTE` `Data Analytics` `Query Optimization` `Structured Queries` `Case Study`
+
