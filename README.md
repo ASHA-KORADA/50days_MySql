@@ -1,42 +1,47 @@
-# 📅 Day 31 – CTE (Multi-Step Analysis)
+
+
+## 📅 Day 32: Views – Reusable Queries
 
 ## 📌 Objective
 
-Use **Common Table Expressions (CTEs)** to break complex queries into **clear, multi-step transformations**.
+Use **Views** to store reusable SQL logic and simplify repeated queries.
 
 ---
 
 ## 🛠️ Tasks
 
-* Identify employees with **total salary > 100000**
-* Compare **employee salary vs department average salary**
-* Find **department with highest total salary**
+* Created employee view for reusable employee details
+* Created salary view for salary-related data
+* Created joined view combining employee + salary
+* Filtered employees with salary > 50000 using view
 
 ---
 
-## 🧠 Core Concepts
+## 🧠 Key Concept
 
-* CTE (`WITH` clause)
-* Aggregation (`SUM`, `AVG`)
-* Multi-step query design
-* Reusable intermediate results
+Views act as **virtual tables** that store query logic and improve:
+
+* Reusability
+* Readability
+* Maintainability
 
 ---
 
-## 💡 Key Insight
+## 💡 Insight
 
-CTEs help structure complex logic into **readable, modular steps**, making SQL easier to debug and maintain.
+Instead of rewriting joins and filters multiple times,
+views allow us to **query once and reuse many times**.
 
 ---
 
 ## 📂 File
 
-https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-31.sql
+https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-32.sql
 
 ---
 
 ## 🚀 Takeaway
 
-> Break complex problems into steps — SQL becomes simpler and more powerful.
+> Write once… reuse everywhere. That’s the power of Views.
 
 ---
