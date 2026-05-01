@@ -1,81 +1,42 @@
-# 📊 Day 30: SQL – CTE (Common Table Expressions)
+# 📅 Day 31 – CTE (Multi-Step Analysis)
 
-## 🔍 Objective
+## 📌 Objective
 
-This project focuses on using **Common Table Expressions (CTEs)** to simplify complex queries, improve readability, and perform step-by-step data analysis.
-
----
-
-## 🧠 Key Tasks Performed
-
-### 1. Create Temporary Result Set Using CTE
-
-* Built a temporary dataset using `WITH` clause
-* Filtered data from the CTE instead of writing nested queries
-* Improved query readability and structure
+Use **Common Table Expressions (CTEs)** to break complex queries into **clear, multi-step transformations**.
 
 ---
 
-### 2. Combine Employees and Salaries Using CTE
+## 🛠️ Tasks
 
-* Joined employee and salary tables inside a CTE
-* Created a reusable dataset for further analysis
-* Avoided repeated joins in multiple queries
-
----
-
-### 3. Calculate Department Average Salary Using CTE
-
-* Computed average salary for each department
-* Used aggregation (`AVG`) inside CTE
-* Simplified department-level analysis
+* Identify employees with **total salary > 100000**
+* Compare **employee salary vs department average salary**
+* Find **department with highest total salary**
 
 ---
 
-### 4. Find Employees Earning More Than Department Average
+## 🧠 Core Concepts
 
-* Compared each employee’s salary with department average
-* Filtered employees earning above average
-* Demonstrated real-world business use case
-
----
-
-## ⚙️ SQL Concepts Used
-
-* **CTE (WITH clause)** for modular query design
-* **JOINs** to combine multiple tables
-* **Aggregate Functions** → `AVG()`
-* **Filtering** using conditions on derived data
-* **Reusability** of intermediate result sets
+* CTE (`WITH` clause)
+* Aggregation (`SUM`, `AVG`)
+* Multi-step query design
+* Reusable intermediate results
 
 ---
 
-## 💡 Key Insights
+## 💡 Key Insight
 
-* CTEs make complex queries easier to read and maintain
-* Helps break down problems into logical steps
-* Reduces repetition and improves query clarity
-* Useful for layered analysis and reporting
+CTEs help structure complex logic into **readable, modular steps**, making SQL easier to debug and maintain.
 
 ---
 
-## 🚀 Outcome
+## 📂 File
 
-This project strengthens:
-
-* Structured SQL writing
-* Logical thinking in query design
-* Real-world data analysis approach
+https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-31.sql
 
 ---
 
-## 🔗 Project Link
+## 🚀 Takeaway
 
-👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-30.sql
+> Break complex problems into steps — SQL becomes simpler and more powerful.
 
 ---
-
-## 📌 Tags
-
-`SQL` `CTE` `Data Analytics` `Query Optimization` `Structured Queries` `Case Study`
-
