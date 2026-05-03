@@ -1,31 +1,42 @@
-📅 Day 33: Views – Advanced Usage & Updates
-📌 Objective
 
-Use Views not just for reuse, but for updates, filtering, and multi-table analysis.
+# 📅 Day 34 – Indexing (Query Optimization)
 
-🛠️ Tasks
-Updated employee data using a view
-Created view for employees with salary > 50000
-Built multi-table view (employee + department + salary)
-Designed HR dashboard view for high salary employees
+## 📌 Objective
 
+Improve query performance using **Indexes**.
 
-🧠 Key Concepts
-Updatable Views
-Filtered Views
-Multi-table Views
-Data abstraction using Views
+---
 
+## 🛠️ Tasks
 
-💡 Insight
+* Created index on `emp_id` for faster employee search
+* Created index on `dept_id` for efficient filtering
+* Created composite index on `(emp_id, salary_date)`
 
-Views are not just for reading data—
-they can also simplify updates and enable structured reporting.
+---
 
-📂 File
+## 🧠 Key Concept
 
-https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-33.sql
+Indexes help **speed up data retrieval** by reducing full table scans.
 
-🚀 Takeaway
+---
 
-Views turn complex SQL into simple, reusable, and powerful data layers.
+## 💡 Insight
+
+Proper indexing improves performance,
+but too many indexes can slow down inserts/updates.
+
+---
+
+## 📂 File
+
+https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-34.sql
+
+---
+
+## 🚀 Takeaway
+
+> Indexes make queries faster — but should be used wisely.
+
+---
+
