@@ -1,47 +1,64 @@
+# 📘 Day 36: SQL Stored Procedures
+
+This module focuses on understanding and implementing **Stored Procedures in MySQL** as part of real-world SQL development.
 
 ---
 
-# 📅 Day 35 – Index Optimization (Performance Testing)
+## 📌 What are Stored Procedures?
 
-## 📌 Objective
-
-Understand how indexes improve query performance by comparing execution before and after applying indexes.
-
----
-
-## 🛠️ Tasks
-
-* Analyzed query performance before applying indexes
-* Applied index on join columns and compared performance
-* Used composite index `(emp_id, salary_date)` for multi-condition queries
-* Compared performance before and after applying index on `emp_id`
+Stored Procedures are precompiled SQL logic stored inside the database.
+They allow developers and analysts to execute complex operations efficiently by calling a single routine.
 
 ---
 
-## 🧠 Key Concepts
+## 🧩 Tasks Completed
 
-* Query performance analysis
-* Indexing (single-column & composite)
-* Performance comparison (before vs after indexing)
+### ✅ Retrieve All Employee Data
 
----
-
-## 💡 Insight
-
-Indexes help speed up data retrieval by reducing full table scans.
-However, excessive indexing can impact insert and update operations.
+Created a procedure to fetch complete employee details from the database.
 
 ---
 
-## 📂 File
+### ✅ Find Employee by ID
 
-https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-35.sql
+Implemented a procedure using an **input parameter** to dynamically retrieve employee information based on `emp_id`.
 
 ---
 
-## 🚀 Takeaway
+### ✅ Employee & Salary Data using JOIN
 
-Performance optimization is a key skill —
-writing SQL is important, but writing **efficient SQL** is what makes you stand out.
+Developed a procedure to combine data from multiple tables and fetch employee details along with their salary information.
 
+---
+
+### ✅ Salary-Based Report
+
+Built a procedure to generate a report of employees earning above a specific salary threshold (greater than 50,000).
+
+---
+
+## 🚀 Key Learnings
+
+* Understanding the purpose and advantages of stored procedures
+* Writing reusable and modular SQL logic
+* Using input parameters for dynamic queries
+* Applying JOIN operations within procedures
+* Generating filtered reports using conditions
+
+---
+
+## ⚠️ Best Practices Followed
+
+* Ensured proper database selection before execution
+* Used meaningful procedure naming conventions
+* Avoided redundancy by modularizing SQL logic
+* Followed structured approach for scalability
+
+
+
+---
+
+## 🔗 Repository
+
+👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-36.sql
 ---
