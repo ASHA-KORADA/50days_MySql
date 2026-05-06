@@ -1,64 +1,87 @@
-# 📘 Day 36: SQL Stored Procedures
+# Day 37: SQL Tasks (Stored Procedures – Conditional & Aggregation)
 
-This module focuses on understanding and implementing **Stored Procedures in MySQL** as part of real-world SQL development.
-
----
-
-## 📌 What are Stored Procedures?
-
-Stored Procedures are precompiled SQL logic stored inside the database.
-They allow developers and analysts to execute complex operations efficiently by calling a single routine.
+## Overview
+This project focuses on implementing Stored Procedures in MySQL using conditional logic and aggregation techniques. The tasks demonstrate how procedures can automate reusable business logic for employee salary analysis.
 
 ---
 
-## 🧩 Tasks Completed
-
-### ✅ Retrieve All Employee Data
-
-Created a procedure to fetch complete employee details from the database.
-
----
-
-### ✅ Find Employee by ID
-
-Implemented a procedure using an **input parameter** to dynamically retrieve employee information based on `emp_id`.
+## Concepts Covered
+- Stored Procedures
+- Input Parameters
+- Conditional Logic using IF
+- Categorization using CASE
+- Aggregation Functions
+- GROUP BY
+- Salary Analysis
 
 ---
 
-### ✅ Employee & Salary Data using JOIN
+## Tasks Performed
 
-Developed a procedure to combine data from multiple tables and fetch employee details along with their salary information.
+### 1. Salary-Based Message Using IF Condition
+Created a stored procedure that:
+- Accepts employee details
+- Checks salary conditions
+- Returns messages based on salary level
 
----
-
-### ✅ Salary-Based Report
-
-Built a procedure to generate a report of employees earning above a specific salary threshold (greater than 50,000).
-
----
-
-## 🚀 Key Learnings
-
-* Understanding the purpose and advantages of stored procedures
-* Writing reusable and modular SQL logic
-* Using input parameters for dynamic queries
-* Applying JOIN operations within procedures
-* Generating filtered reports using conditions
+Example outcomes:
+- High Salary
+- Low Salary
 
 ---
 
-## ⚠️ Best Practices Followed
+### 2. Employee Categorization Using CASE Statement
+Created a procedure to classify employees into salary categories:
 
-* Ensured proper database selection before execution
-* Used meaningful procedure naming conventions
-* Avoided redundancy by modularizing SQL logic
-* Followed structured approach for scalability
+| Salary Range | Category |
+|---|---|
+| Greater than 80000 | High |
+| Greater than 40000 | Medium |
+| Less than or equal to 40000 | Low |
 
-
+This demonstrates practical usage of the CASE statement inside SQL procedures.
 
 ---
 
-## 🔗 Repository
+### 3. Aggregation Procedure for Total Salary
+Implemented a stored procedure to:
+- Calculate total salary
+- Group employee salary information
+- Perform aggregation using SUM()
 
-👉 https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-36.sql
+This simulates real-world payroll and compensation reporting scenarios.
+
 ---
+
+## Key Learnings
+- Difference between simple and compound stored procedures
+- Usage of conditional logic in SQL
+- Applying business rules inside procedures
+- Using aggregation functions within procedures
+- Practical implementation of reusable SQL logic
+
+---
+
+## Tools Used
+- MySQL
+- VS Code
+- MySQL Extension
+
+---
+
+## Real-World Applications
+- HR Analytics
+- Payroll Systems
+- Employee Compensation Analysis
+- Salary Band Classification
+- Financial Reporting
+
+---
+
+## Outcome
+Successfully built multiple stored procedures to handle:
+- Conditional decision-making
+- Employee categorization
+- Aggregated salary calculations
+
+These tasks strengthen understanding of procedural SQL and business-oriented database operations.
