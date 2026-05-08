@@ -1,58 +1,57 @@
-# Day 38: SQL Triggers – Automation & Data Protection
+# Day 39: SQL Triggers – Validation & Logging
 
 ## Overview
 
-In Day 38, I worked with SQL Triggers to automate database actions and protect data integrity.
-This task focused on using BEFORE UPDATE and AFTER INSERT triggers in MySQL.
+In Day 39, I continued exploring SQL Triggers by focusing on data validation and change tracking.
+This task helped me understand how databases can automatically validate data before insertion and maintain logs whenever important values are updated.
 
 ---
 
 ## Tasks Completed
 
-### 1. BEFORE UPDATE Trigger
+### 1. BEFORE INSERT Trigger
 
-* Created a trigger to prevent negative salary updates
-* Ensured salary values remain valid
-* Protected employee salary data from incorrect updates
+* Created a trigger to prevent negative salary insertion
+* Added validation logic before inserting employee records
+* Improved data quality and consistency
 
-### 2. AFTER INSERT Trigger
+### 2. Automatic Salary Correction
 
-* Created a trigger to automatically log attendance activity
-* Trigger executes immediately after inserting attendance records
+* Automatically converted negative salary values to `0`
+* Ensured invalid salary entries are handled before storing data
 
-### 3. Attendance Logging System
+### 3. AFTER UPDATE Trigger
 
-* Stored attendance activity inside the `attendance_logs` table
-* Maintained automated tracking of employee attendance operations
+* Created a trigger to track salary changes after updates
+* Captured salary modification activity automatically
 
-### 4. Trigger Testing
+### 4. Salary Change Logging
 
-* Tested trigger execution using:
-
-  * UPDATE operations
-  * INSERT operations
-* Verified automation and data protection functionality
+* Stored old salary and new salary details inside the `salary_logs` table
+* Maintained salary history for auditing and tracking purposes
 
 ---
 
 ## Concepts Practiced
 
 * SQL Triggers
-* BEFORE UPDATE Trigger
-* AFTER INSERT Trigger
+* BEFORE INSERT Trigger
+* AFTER UPDATE Trigger
 * Data Validation
-* Automation in SQL
-* Logging Mechanism
-* Data Integrity
+* Automatic Data Correction
+* Audit Logging
+* OLD and NEW Keywords
+* Database Automation
 
 ---
 
 ## Key Learnings
 
-* Triggers help automate repetitive database operations
-* BEFORE triggers are useful for validation and protection
-* AFTER triggers are useful for logging and auditing
-* Triggers improve data consistency and reduce manual work
+* BEFORE triggers help validate and modify data before insertion
+* AFTER triggers are useful for tracking and auditing changes
+* Triggers reduce manual monitoring and improve automation
+* Logging mechanisms help maintain transparency in database operations
+* Databases can automatically enforce business rules using triggers
 
 ---
 
@@ -67,6 +66,7 @@ This task focused on using BEFORE UPDATE and AFTER INSERT triggers in MySQL.
 
 Successfully implemented SQL triggers for:
 
-* Preventing invalid salary updates
-* Automating attendance logging
-* Improving database integrity and automation
+* Preventing invalid salary insertion
+* Automatically correcting salary values
+* Tracking salary updates
+* Maintaining salary history logs automatically
