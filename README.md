@@ -1,56 +1,58 @@
-# Day 40: SQL Temporary Tables – Session-Based Data Handling
+# Day 41: SQL Database Creation & Dataset Loading
 
 ## Overview
 
-In Day 40, I explored Temporary Tables in MySQL and learned how they help manage intermediate or short-term data during query execution.
+In Day 41, I worked on designing and building a complete relational database structure in MySQL using an ER Diagram.
 
-This task focused on creating temporary tables, storing aggregated data, joining temporary data with existing tables, and removing temporary tables after usage.
+This task focused on creating database tables, defining relationships between tables, and loading datasets into MySQL successfully.
 
 ---
 
 ## Tasks Completed
 
-### 1. Created Temporary Table
+### 1. Database Table Creation
 
-* Created a temporary table to store employee salary summaries
-* Used the table for short-term data processing during the session
+* Created all tables based on the given ER Diagram
+* Structured the database according to real-world relationships
 
-### 2. Inserted Aggregated Salary Data
+### 2. Defined Keys and Relationships
 
-* Inserted summarized salary data into the temporary table
-* Used aggregate functions to calculate employee salary totals
+* Implemented Primary Keys for unique identification
+* Added Foreign Keys to establish relationships between tables
+* Maintained relational database integrity
 
-### 3. Joined Temporary Table with Employee Table
+### 3. Dataset Loading
 
-* Joined temporary salary data with employee details
-* Retrieved employee information along with summarized salary records
+* Loaded datasets into MySQL tables using import/load methods
+* Verified successful data insertion into all tables
 
-### 4. Dropped Temporary Table
+### 4. Relationship Validation
 
-* Removed the temporary table after usage
-* Practiced proper cleanup of temporary database objects
+* Tested table connections using SQL queries
+* Confirmed proper linking between related tables
 
 ---
 
 ## Concepts Practiced
 
-* Temporary Tables
-* Aggregate Functions
-* GROUP BY
-* Table Joins
-* Session-Based Storage
-* Intermediate Data Handling
-* Data Summarization
+* ER Diagram Understanding
+* Database Design
+* Table Creation
+* Primary Keys
+* Foreign Keys
+* One-to-Many Relationships
+* Data Importing
+* Relational Database Modeling
 
 ---
 
 ## Key Learnings
 
-* Temporary tables are useful for storing intermediate query results
-* They exist only during the current database session
-* Temporary tables help simplify complex queries
-* They improve query readability and modularity
-* Temporary tables are commonly used in reporting and ETL processes
+* A strong database structure is essential before writing complex SQL queries
+* Understanding relationships improves query writing and analysis
+* Foreign Keys help maintain data consistency
+* ER Diagrams provide a blueprint for real-world database systems
+* Proper database design makes SQL projects more meaningful and scalable
 
 ---
 
@@ -63,9 +65,11 @@ This task focused on creating temporary tables, storing aggregated data, joining
 
 ## Outcome
 
-Successfully implemented temporary table operations for:
+Successfully built a relational database system by:
 
-* Storing summarized salary data
-* Performing joins using temporary datasets
-* Managing session-level database objects
-* Improving structured query workflows
+* Creating interconnected tables
+* Establishing relationships using keys
+* Loading datasets into MySQL
+* Validating table relationships using SQL queries
+
+---
