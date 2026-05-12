@@ -1,75 +1,109 @@
-# Day 41: SQL Database Creation & Dataset Loading
+# Day 42: SQL Tasks – Data Cleaning & Duplicate Handling
 
 ## Overview
 
-In Day 41, I worked on designing and building a complete relational database structure in MySQL using an ER Diagram.
-
-This task focused on creating database tables, defining relationships between tables, and loading datasets into MySQL successfully.
+Today’s focus was on performing essential **Data Cleaning Operations** in MySQL using duplicate tables created from the original dataset.
+The tasks covered cleaning inconsistent text data, handling NULL values, identifying duplicate records, and removing duplicates using window functions.
 
 ---
 
 ## Tasks Completed
 
-### 1. Database Table Creation
+### 1. Created Duplicate Tables for Cleaning Process
 
-* Created all tables based on the given ER Diagram
-* Structured the database according to real-world relationships
+Created separate cleaning tables to safely perform transformations without affecting the original data.
 
-### 2. Defined Keys and Relationships
+Tables created:
 
-* Implemented Primary Keys for unique identification
-* Added Foreign Keys to establish relationships between tables
-* Maintained relational database integrity
-
-### 3. Dataset Loading
-
-* Loaded datasets into MySQL tables using import/load methods
-* Verified successful data insertion into all tables
-
-### 4. Relationship Validation
-
-* Tested table connections using SQL queries
-* Confirmed proper linking between related tables
+* `cleaned_customers`
+* `cleaned_products`
+* `cleaned_orders`
+* `cleaned_order_details`
+* `cleaned_payments`
 
 ---
 
-## Concepts Practiced
+### 2. Removed Leading & Trailing Spaces
 
-* ER Diagram Understanding
-* Database Design
-* Table Creation
-* Primary Keys
-* Foreign Keys
-* One-to-Many Relationships
-* Data Importing
-* Relational Database Modeling
+Used string cleaning techniques to remove unnecessary spaces from text columns for better consistency and accuracy.
 
----
+Topics Covered:
 
-## Key Learnings
-
-* A strong database structure is essential before writing complex SQL queries
-* Understanding relationships improves query writing and analysis
-* Foreign Keys help maintain data consistency
-* ER Diagrams provide a blueprint for real-world database systems
-* Proper database design makes SQL projects more meaningful and scalable
+* Extra spaces in names and text fields
+* Standardized formatting
+* Data consistency improvement
 
 ---
 
-## Tools Used
+### 3. Standardized Text Formatting
 
-* MySQL
-* VS Code SQL Extension
+Converted text values into a consistent format using uppercase transformation techniques.
+
+Examples:
+
+* Customer names
+* Product categories
+* Payment methods
+* City and state names
+
+---
+
+### 4. Replaced NULL Values with Default Values
+
+Handled missing values by replacing NULLs with meaningful default values to improve data quality and avoid analysis issues.
+
+Examples:
+
+* Unknown
+* Not Available
+* 0
+* Pending
 
 ---
 
-## Outcome
+### 5. Identified Duplicate Records
 
-Successfully built a relational database system by:
+Used window functions and row numbering techniques to identify duplicate records in tables.
 
-* Creating interconnected tables
-* Establishing relationships using keys
-* Loading datasets into MySQL
-* Validating table relationships using SQL queries
+Concepts Practiced:
+
+* `ROW_NUMBER()`
+* `PARTITION BY`
+* Duplicate detection logic
 
 ---
+
+### 6. Removed Duplicate Records
+
+Applied duplicate removal logic while preserving the original valid record.
+
+Concepts Practiced:
+
+* Window Functions
+* Duplicate cleanup strategies
+* Safe deletion techniques
+
+---
+
+## Concepts Learned
+
+* Data Cleaning in SQL
+* Duplicate Table Creation
+* String Functions
+* NULL Handling
+* Window Functions
+* Duplicate Detection
+* Duplicate Removal Techniques
+* Data Standardization
+
+---
+
+## Key Takeaway
+
+Data cleaning is one of the most important steps in real-world data analysis and database management.
+This task helped in understanding how raw data can be transformed into clean, consistent, and analysis-ready data using SQL.
+
+---
+
+## GitHub Repository
+https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-42.sql
