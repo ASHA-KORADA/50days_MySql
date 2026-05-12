@@ -1,109 +1,107 @@
-# Day 42: SQL Tasks – Data Cleaning & Duplicate Handling
+# Day 43: SQL Tasks – Date Formatting, Data Types & Constraints
 
 ## Overview
 
-Today’s focus was on performing essential **Data Cleaning Operations** in MySQL using duplicate tables created from the original dataset.
-The tasks covered cleaning inconsistent text data, handling NULL values, identifying duplicate records, and removing duplicates using window functions.
+Today’s focus was on improving database structure and data consistency by performing date standardization, fixing incorrect data types, and implementing table constraints in MySQL.
+
+These tasks are essential in real-world database management and data-cleaning workflows to ensure data accuracy, consistency, and relational integrity.
 
 ---
 
 ## Tasks Completed
 
-### 1. Created Duplicate Tables for Cleaning Process
+### 1. Standardized Date Columns
 
-Created separate cleaning tables to safely perform transformations without affecting the original data.
-
-Tables created:
-
-* `cleaned_customers`
-* `cleaned_products`
-* `cleaned_orders`
-* `cleaned_order_details`
-* `cleaned_payments`
-
----
-
-### 2. Removed Leading & Trailing Spaces
-
-Used string cleaning techniques to remove unnecessary spaces from text columns for better consistency and accuracy.
+Worked on cleaning and standardizing date values using SQL date functions.
 
 Topics Covered:
 
-* Extra spaces in names and text fields
-* Standardized formatting
-* Data consistency improvement
+* Converting inconsistent date formats
+* Handling raw string-based date values
+* Standardizing dates into SQL-compatible format
 
 ---
 
-### 3. Standardized Text Formatting
+### 2. Converted Dates into Proper SQL DATE Format
 
-Converted text values into a consistent format using uppercase transformation techniques.
+Transformed cleaned date strings into proper SQL `DATE` datatype for better querying and analysis.
 
-Examples:
+Benefits:
 
-* Customer names
-* Product categories
-* Payment methods
-* City and state names
-
----
-
-### 4. Replaced NULL Values with Default Values
-
-Handled missing values by replacing NULLs with meaningful default values to improve data quality and avoid analysis issues.
-
-Examples:
-
-* Unknown
-* Not Available
-* 0
-* Pending
+* Accurate date filtering
+* Easier sorting
+* Better performance
+* Reliable date calculations
 
 ---
 
-### 5. Identified Duplicate Records
+### 3. Fixed Incorrect Data Types
 
-Used window functions and row numbering techniques to identify duplicate records in tables.
+Reviewed and corrected inappropriate column data types across cleaned tables.
+
+Data types modified:
+
+* `INT`
+* `VARCHAR`
+* `DECIMAL`
+* `DATE`
+
+---
+
+### 4. Modified Columns Using ALTER TABLE
+
+Used table modification techniques to improve schema structure and optimize data storage.
 
 Concepts Practiced:
 
-* `ROW_NUMBER()`
-* `PARTITION BY`
-* Duplicate detection logic
+* `ALTER TABLE`
+* `MODIFY`
+* Schema updates
 
 ---
 
-### 6. Removed Duplicate Records
+### 5. Added Primary Key Constraints
 
-Applied duplicate removal logic while preserving the original valid record.
+Implemented Primary Keys to uniquely identify records in tables.
 
-Concepts Practiced:
+Benefits:
 
-* Window Functions
-* Duplicate cleanup strategies
-* Safe deletion techniques
+* Prevent duplicate records
+* Improve data integrity
+* Enable table relationships
+
+---
+
+### 6. Added Foreign Key Constraints
+
+Created relationships between tables using Foreign Keys to maintain relational consistency.
+
+Benefits:
+
+* Enforces referential integrity
+* Maintains valid relationships
+* Prevents orphan records
 
 ---
 
 ## Concepts Learned
 
-* Data Cleaning in SQL
-* Duplicate Table Creation
-* String Functions
-* NULL Handling
-* Window Functions
-* Duplicate Detection
-* Duplicate Removal Techniques
-* Data Standardization
+* Data Cleaning
+* Date Formatting
+* STR_TO_DATE()
+* Data Type Conversion
+* Schema Modification
+* Primary Keys
+* Foreign Keys
+* Relational Database Design
+* Data Integrity
 
 ---
 
 ## Key Takeaway
 
-Data cleaning is one of the most important steps in real-world data analysis and database management.
-This task helped in understanding how raw data can be transformed into clean, consistent, and analysis-ready data using SQL.
+Proper data types and constraints are the foundation of a reliable database system.
+This task helped in understanding how real-world databases are cleaned, standardized, and structured for accurate analysis and scalable applications.
 
 ---
 
-## GitHub Repository
-https://github.com/ASHA-KORADA/50days_MySql/blob/main/Quries/day-42.sql
