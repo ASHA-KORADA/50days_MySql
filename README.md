@@ -1,107 +1,80 @@
-# Day 43: SQL Tasks – Date Formatting, Data Types & Constraints
+# Day 44: SQL Business Analysis – Foundational Metrics & Insights
 
 ## Overview
 
-Today’s focus was on improving database structure and data consistency by performing date standardization, fixing incorrect data types, and implementing table constraints in MySQL.
+In Day 44, I worked on performing basic business analysis using SQL by calculating important business metrics from transactional data.
 
-These tasks are essential in real-world database management and data-cleaning workflows to ensure data accuracy, consistency, and relational integrity.
+This task focused on understanding how SQL can transform raw business data into meaningful insights that support decision-making.
 
 ---
 
 ## Tasks Completed
 
-### 1. Standardized Date Columns
+### 1. Customer Analysis
 
-Worked on cleaning and standardizing date values using SQL date functions.
+* Calculated total number of customers
+* Performed customer-wise order analysis using GROUP BY
 
-Topics Covered:
+### 2. Order Analysis
 
-* Converting inconsistent date formats
-* Handling raw string-based date values
-* Standardizing dates into SQL-compatible format
+* Calculated total number of orders
+* Analyzed ordering activity across customers
 
----
+### 3. Revenue Analysis
 
-### 2. Converted Dates into Proper SQL DATE Format
+* Calculated total revenue generated
+* Measured overall business performance
 
-Transformed cleaned date strings into proper SQL `DATE` datatype for better querying and analysis.
+### 4. Average Order Value Analysis
 
-Benefits:
+* Found average order value
+* Understood customer purchasing behavior
 
-* Accurate date filtering
-* Easier sorting
-* Better performance
-* Reliable date calculations
+### 5. Product Sales Analysis
 
----
-
-### 3. Fixed Incorrect Data Types
-
-Reviewed and corrected inappropriate column data types across cleaned tables.
-
-Data types modified:
-
-* `INT`
-* `VARCHAR`
-* `DECIMAL`
-* `DATE`
+* Calculated total products sold
+* Analyzed product movement within transactions
 
 ---
 
-### 4. Modified Columns Using ALTER TABLE
+## Concepts Practiced
 
-Used table modification techniques to improve schema structure and optimize data storage.
-
-Concepts Practiced:
-
-* `ALTER TABLE`
-* `MODIFY`
-* Schema updates
-
----
-
-### 5. Added Primary Key Constraints
-
-Implemented Primary Keys to uniquely identify records in tables.
-
-Benefits:
-
-* Prevent duplicate records
-* Improve data integrity
-* Enable table relationships
+* Aggregate Functions
+* COUNT()
+* SUM()
+* AVG()
+* GROUP BY
+* Business Metrics
+* Customer Analysis
+* Revenue Analysis
+* SQL-Based Reporting
 
 ---
 
-### 6. Added Foreign Key Constraints
+## Key Learnings
 
-Created relationships between tables using Foreign Keys to maintain relational consistency.
-
-Benefits:
-
-* Enforces referential integrity
-* Maintains valid relationships
-* Prevents orphan records
+* Basic analysis forms the foundation of business intelligence
+* Even simple metrics can provide valuable business insights
+* SQL helps convert transactional data into meaningful reports
+* Aggregate functions are essential for analytical queries
+* GROUP BY enables customer-level and category-level analysis
 
 ---
 
-## Concepts Learned
+## Tools Used
 
-* Data Cleaning
-* Date Formatting
-* STR_TO_DATE()
-* Data Type Conversion
-* Schema Modification
-* Primary Keys
-* Foreign Keys
-* Relational Database Design
-* Data Integrity
+* MySQL
+* VS Code SQL Extension
 
 ---
 
-## Key Takeaway
+## Outcome
 
-Proper data types and constraints are the foundation of a reliable database system.
-This task helped in understanding how real-world databases are cleaned, standardized, and structured for accurate analysis and scalable applications.
+Successfully performed foundational business analysis using SQL by:
+
+* Calculating revenue and order metrics
+* Analyzing customer purchasing activity
+* Measuring average order value
+* Generating business insights from transactional datasets
 
 ---
-
