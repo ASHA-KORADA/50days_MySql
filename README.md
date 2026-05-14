@@ -1,80 +1,59 @@
-# Day 44: SQL Business Analysis – Foundational Metrics & Insights
+# Day 45: SQL Customer Analysis 🚀
 
-## Overview
+Today I worked on **Customer Analysis using SQL** to understand customer behavior, revenue generation, and business growth trends.
 
-In Day 44, I worked on performing basic business analysis using SQL by calculating important business metrics from transactional data.
+## 📌 Tasks Completed
 
-This task focused on understanding how SQL can transform raw business data into meaningful insights that support decision-making.
-
----
-
-## Tasks Completed
-
-### 1. Customer Analysis
-
-* Calculated total number of customers
-* Performed customer-wise order analysis using GROUP BY
-
-### 2. Order Analysis
-
-* Calculated total number of orders
-* Analyzed ordering activity across customers
-
-### 3. Revenue Analysis
-
-* Calculated total revenue generated
-* Measured overall business performance
-
-### 4. Average Order Value Analysis
-
-* Found average order value
-* Understood customer purchasing behavior
-
-### 5. Product Sales Analysis
-
-* Calculated total products sold
-* Analyzed product movement within transactions
+✔ Find top customers by number of orders
+✔ Find top customers by generated revenue
+✔ Find customers with no orders
+✔ Analyze new customer signup trend month-wise
+✔ Find repeat customers with multiple orders
+✔ Calculate customer lifetime value (CLV)
+✔ Calculate average spend per customer
+✔ Find total customers per city
 
 ---
 
-## Concepts Practiced
+## 💡 Key Learnings
 
-* Aggregate Functions
-* COUNT()
-* SUM()
-* AVG()
-* GROUP BY
-* Business Metrics
-* Customer Analysis
-* Revenue Analysis
-* SQL-Based Reporting
+Through these SQL queries, I understood how businesses analyze customer data to make better decisions.
 
----
+### Important Insights:
 
-## Key Learnings
-
-* Basic analysis forms the foundation of business intelligence
-* Even simple metrics can provide valuable business insights
-* SQL helps convert transactional data into meaningful reports
-* Aggregate functions are essential for analytical queries
-* GROUP BY enables customer-level and category-level analysis
+* Identify high-value customers
+* Track repeat customer behavior
+* Measure customer lifetime value
+* Analyze customer growth trends
+* Understand city-wise customer distribution
+* Detect inactive customers
 
 ---
 
-## Tools Used
+## 🛠 SQL Concepts Used
 
-* MySQL
-* VS Code SQL Extension
+* `GROUP BY`
+* `HAVING`
+* `JOIN`
+* `LEFT JOIN`
+* `COUNT()`
+* `SUM()`
+* `AVG()`
+* `ORDER BY`
+* Aggregate Analysis
+
+---
+
+
+## 📈 Business Impact
+
+Customer analysis helps companies:
+
+* improve retention strategies
+* identify loyal customers
+* increase revenue
+* optimize marketing campaigns
+* understand customer purchasing patterns
 
 ---
 
-## Outcome
-
-Successfully performed foundational business analysis using SQL by:
-
-* Calculating revenue and order metrics
-* Analyzing customer purchasing activity
-* Measuring average order value
-* Generating business insights from transactional datasets
-
----
